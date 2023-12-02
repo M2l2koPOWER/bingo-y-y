@@ -1,0 +1,10 @@
+[Unit]
+Description=Bingo Service 
+
+[Service]
+ExecStart=/home/ubuntu/Bingo/bingo run_server
+Restart=always
+User=ubuntu  
+
+[Install]
+WantedBy=multi-user.target
